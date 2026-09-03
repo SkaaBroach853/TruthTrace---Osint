@@ -1,0 +1,9 @@
+{
+  "name": "truthtrace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev":"concurrently \"npm:api\" \"npm:vite\"","vite":"vite","api":"node server/index.js","build":"vite build","test":"node --test test/*.test.js","check":"npm run build && npm test"},
+  "devDependencies": {"vite":"^6.1.0","concurrently":"^9.1.2"},
+  "dependencies": {"better-sqlite3":"^11.8.1","dotenv":"^16.4.7","exifreader":"^4.29.0","express":"^4.21.2","multer":"^2.0.2","pdfkit":"^0.16.0"}
+}
